@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Lab4</string>
+    <string name="profileActivity">This is the ProfileActivity</string>
+    <string name="go_back">Go Back</string>
+    <string name="launch_profile">Launch Profile</string>
 </resources>
