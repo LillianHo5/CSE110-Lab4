@@ -7,14 +7,40 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/launch_profile_btn"
+        android:id="@+id/show_profile_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/launch_profile"
         android:onClick="onLaunchProfileClicked"
+        android:text="@string/show_my_profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <EditText
+        android:id="@+id/max_count_view"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="@string/count_to"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_profile_btn" />
+
+    <Button
+        android:id="@+id/max_count_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_counter"
+        android:onClick="onShowCounterClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_count_view"
+        app:layout_constraintVertical_bias="0.184" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
